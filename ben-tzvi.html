@@ -8,18 +8,21 @@
 <body>
 
 <div>
-<img class="btn" src="14681970_10211251299257351_5942890260577983899_o.jpg" alt="altext">
-<img class="btn" src="m.gif">
-<img class="btn" src="spy1600.png" alt="2altext">
+<img class="btn" src="1.jpg" alt="altext" title="imgtitle1">
+<img class="btn" src="m.gif" title="imgtitle2">
+<img class="btn" src="spy1600.png" alt="2altext" title="imgtitle3">
+<img class="btn" src="button.png" title="imgtitle4">
 </div>
 <script>
 	function asignAlt() {
-		for (i = 0; i < document.querySelectorAll("btn").length; i++) {
-		  if (document.querySelectorAll("btn").typeOf == )
-		
+		for (i = 0; i < document.querySelectorAll(".btn").length; i++) {
+            if (document.querySelectorAll(".btn")[i].alt = "undefined") {
+             document.querySelectorAll(".btn")[i].setAttribute("alt", document.querySelectorAll(".btn")[i].title);  
+          }
+        }
 		
 	}
-	
+	window.onload = asignAlt;
 	</script>
 </body>
 </html>
